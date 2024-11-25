@@ -1,7 +1,7 @@
 # NAIRR-SMLM
 This site dedicates to AI research, training, and education. 
 
-It provides datasets and benchmark for AI training and validation in single molecule localization microscopy (SMLM). 
+It provides datasets and benchmark for AI training and testing in single molecule localization microscopy (SMLM). 
 
 Other types of spatiotemporal localization algorithms can also be evaluated and benchmarked. 
 
