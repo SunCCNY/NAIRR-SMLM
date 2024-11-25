@@ -18,13 +18,13 @@ A localization algorithm plays a critical role in mining the information of emit
 ## AI
 Due to its highly informational and computational efficiency, an AI built on neural network and deep learning is particularly suitable to serve as a localization algorithm in SMLM. 
 
-# Dataset
+# Datasets
 ## Components 
 Each dataset consists of two components:
 
 (1) A set of emitter locations (2D/3D coordinates) representing the original superresolution image; 
 
-(2) A data movie consisting of a sequence of data frames generated with the emitter locations according to the model of data movie [5-8]. 
+(2) A data movie consisting of a sequence of data frames synthesized with the emitter locations according to the model of data movie [5-8]. 
 
 ## Model of data movie
 The model of data movie consists of two sub-models: 
@@ -33,7 +33,7 @@ The model of data movie consists of two sub-models:
 
 (2) the model of emitter photoactivation processes [7, 8]. 
 
-All parameters used to generate the data movies are defined in [5-8]. 
+All parameters used to synthesize the data movies are defined in [5-8]. 
 
 # Training and testing of AI
 ## Training
