@@ -1,4 +1,4 @@
-# Examples for AI training, testing, and benchmarking
+# Examples for AI Training, Validating, Testing and Benchmarking
 
 adf ?
 
