@@ -1,2 +1,2 @@
-# Dataset for training of AI
+# Dataset for Training of AI
 ss
