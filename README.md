@@ -1,9 +1,9 @@
 # NAIRR-SMLM
 This site dedicates to AI research, training, and education. 
 
-It provides datasets and information-theoretical benchmarking for AI training and testing in single molecule localization microscopy (SMLM). 
+It provides datasets for AI training, validating and testing as well as information-theoretical benchmarking of trainined AI in single molecule localization microscopy (SMLM). 
 
-Other types of spatiotemporal localization algorithms can also be evaluated and benchmarked. 
+It can also evaluate and benchmark other types of spatiotemporal localization algorithms. 
 
 # Introduction 
 The SMLM technique, including PALM [1], FPALM [2], STORM [3] and dSTORM [4], was first invented in 2006 and won the 2014 Nobel Prize in Chemistry. The SMLM technique circumvents the longstanding light diffraction, provides superresolution imaging of biological samples at the nanoscale, and has been significantly impacting on biomedical research. 
@@ -19,6 +19,9 @@ A localization algorithm plays a critical role in mining the information of emit
 Due to its highly informational and computational efficiency, an AI built on neural network and deep learning is particularly suitable to serve as a localization algorithm in SMLM. 
 
 # Datasets
+## Type of datasets
+In each case, there are three datasets for AI training, validating and testing, respectively.
+
 ## Components 
 Each dataset consists of two components:
 
