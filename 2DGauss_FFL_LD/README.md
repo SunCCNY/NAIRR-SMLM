@@ -8,9 +8,9 @@
 (3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
 
 ## Type of localization and imaging system
-AI performs frame-by-frame localization (FFL). 
+**Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
-2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
+**System:** 2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
 
 ## AI input and output
 AI can be trained, validated, and tested by a pair of input and output data sets. 
