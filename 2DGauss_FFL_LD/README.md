@@ -36,6 +36,10 @@ Training datasets are in the folder: **Training**.
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100|nm|
 |Frame size |Kx = 32, Ky = 32 |pixels |
+|Emitter distribution| Random, uniform in FOV| |
+
+
+
 
 (2) **2DGauss_FFL_LD_xy.zip**: N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
@@ -47,6 +51,14 @@ Training datasets are in the folder: **Training**.
 
 (3) The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
 
+## Validating datasets
+
+Validating datasets are 
+
+
+
+
+
 ## Other parameters
 The  data frames are synthesized by using the following parameters. 
 
@@ -55,8 +67,6 @@ The  data frames are synthesized by using the following parameters.
 |:-----|:-----|:-----|
 |Emitter intensity |I = 300000|photons/sec/emitter|
 |Analog digital unit |ADU = 1|photons/unit|
-
-Emitters in each frame are randomly and uniformly distributed in FOV. 
 
 ### Data frame 
 |Parameter |Variable and value| Unit|
