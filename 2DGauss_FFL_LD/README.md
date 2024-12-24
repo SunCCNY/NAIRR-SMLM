@@ -1,8 +1,10 @@
 # 2DGauss_FFL_LD
 
 ## Purposes
-(1) Provide datasets for AI training, validating, and testing. 
+(1) Provide datasets for AI training, validating, and testing.
+
 (2) Benchmark AI performance by the information-theoretical UGIA-F and UGIA-M detectors.
+
 (3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
 
 ## Type of localization and imaging system
