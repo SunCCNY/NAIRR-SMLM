@@ -6,17 +6,33 @@
 (3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
 
 ## Type of localization 
-AI performs frame-by-frame localization (FFL). 
+Frame-by-frame localization (FFL) is performed by AI or localization algorithms. 
 
 ## Imaging system
 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
 
+## Training datasets
+Training datasets are stored in the folder: Training. 
 
 
-## Purpose 
-Evaluate and benchmark performance of localization algorithms in localization of multiple emitters with overlapped PSFs from a single data frame. 
+The main parameters are given below.
+ 
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Emitter density |D=0.5|emitters/um^2|
+|Number of emitters |M=5 |emitters/frame |
+|Field of view |[0,Lx] x [0,Ly] |nm| 
+|Pixel size |Dx=100, Dy=100|nm|
+|Frame size |Kx=Lx/Dx, Ky=Ly/Dy |pixels |
 
-## Method
+
+
+
+2DGauss_FFL_LD_Frame.zip consists of 500 data frames. 
+2DGauss_FFL_LD_Frame.zip
+
+
+
 ### Five data frames 
 
 Five data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
