@@ -13,18 +13,18 @@
 **System:** 2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
 
 ## AI input and output
-AI can be trained, validated, and tested by a pair of input and output data sets. 
+AI can be trained, validated, and tested by a pair of input and output datasets. 
 
-**Input**: A data frame consisting of a set of PSFs produced by emitters through light diffraction. 
+**Input**: A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
 
 [Show a figure of a data frame]
 
-**Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. 
+**Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. An example of emitter locations is shown below. 
 
 [Show a figure of a set of emitter locations]
 
 ## Training datasets
-Training datasets are stored in the folder: **Training**. 
+Training datasets are in the folder: **Training**. 
 
 (1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
  
@@ -32,12 +32,12 @@ Training datasets are stored in the folder: **Training**.
 |:-----|:-----|:-----|
 |Number of frames |N = 500 |frames |
 |Number of emitters |M = 5 |emitters/frame |
-|Emitter density |D=0.5|emitters/um^2|
+|Emitter density |D = 0.5|emitters/um^2|
 |Field of view |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100|nm|
 |Frame size |Kx = 32, Ky = 32 |pixels |
 
-(2) **2DGauss_FFL_LD_xy.zip**: N = 500 txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
+(2) **2DGauss_FFL_LD_xy.zip**: N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
 
