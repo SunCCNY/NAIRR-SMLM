@@ -10,10 +10,12 @@
 ## Type of localization and imaging system
 AI performs frame-by-frame localization (FFL). 
 
-2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
+2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
 
 ## AI input and output
-**Input**: A data frame consisting of a set of point spread functions (PSF) produced by emitters through light diffraction. 
+AI can be trained, validated, and tested by a pair of input and output data sets. 
+
+**Input**: A data frame consisting of a set of PSFs produced by emitters through light diffraction. 
 
 [Show a figure of a data frame]
 
