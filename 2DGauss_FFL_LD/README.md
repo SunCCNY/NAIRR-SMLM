@@ -13,7 +13,9 @@ AI performs frame-by-frame localization (FFL).
 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
 
 ## Training datasets
-Training datasets are stored in the folder **Training**. The main parameters are given below.
+Training datasets are stored in the folder: **Training**. 
+
+The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
