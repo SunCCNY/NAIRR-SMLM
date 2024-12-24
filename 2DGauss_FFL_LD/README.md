@@ -26,77 +26,28 @@ AI can be trained, validated, and tested by a pair of input and output data sets
 ## Training datasets
 Training datasets are stored in the folder: **Training**. 
 
-
-
-
-(1) **2DGauss_FFL_LD_xy.zip** consists of N = 500 files each containing M = 5 emitter locations 
-
-The main parameters are given below.
+(1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
+|Number of frames |N = 500 |frames |
 |Number of emitters |M = 5 |emitters/frame |
+|Emitter density |D=0.5|emitters/um^2|
 |Field of view |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100|nm|
 |Frame size |Kx = 32, Ky = 32 |pixels |
 
-
-|Emitter density |D=0.5|emitters/um^2|
-
-
-
-2DGauss_FFL_LD_Frame.zip consists of 500 data frames. 
-2DGauss_FFL_LD_Frame.zip
-
-
-
-### Five data frames 
-
-Five data frames with different emitter densities are synthesized and saved as tiff files with 16 bits in depth:
-
-**2DGauss_MESF_density0.5_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
-
-![Alt text](Doc/2DGauss_MESF_density0.5_Frame.png)
-
-**2DGauss_MESF_density1_Frame.tif  (For purpose of demonstration, .png images are shown here.)**
-
-![Alt text](Doc/2DGauss_MESF_density1_Frame.png)
-
-**2DGauss_MESF_density2_Frame.tif**
-
-![Alt text](Doc/2DGauss_MESF_density2_Frame.png)
-
-**2DGauss_MESF_density4_Frame.tif**
-
-![Alt text](Doc/2DGauss_MESF_density4_Frame.png)
-
-**2DGauss_MESF_density8_Frame.tif**
-
-![Alt text](Doc/2DGauss_MESF_density8_Frame.png)
-
-### Submission 
-
-For each data frame, the emitter locations (x,y) in nm shall be estimated and saved row by row in a .txt file: e.g.
+(2) **2DGauss_FFL_LD_xy.zip**: N = 500 txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
-
-4.2119986e+02   5.8867272e+03
 
 ... ...
 
 4.1254239e+02   6.8510823e+03
 
-The filenames in submission shall be in the format: 
+(3) The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
 
-**2DGauss_MESF_density0.5_xy_algorithmName.txt** 
 
-**2DGauss_MESF_density1_xy_algorithmName.txt** 
-
-**2DGauss_MESF_density2_xy_algorithmName.txt** 
-
-**2DGauss_MESF_density4_xy_algorithmName.txt** 
-
-**2DGauss_MESF_density8_xy_algorithmName.txt** 
 
 ## Parameters
 The five data frames are synthesized by using the following parameters. 
