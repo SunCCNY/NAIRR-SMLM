@@ -12,8 +12,22 @@ AI performs frame-by-frame localization (FFL).
 
 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
 
+## AI input and output
+Input: A data frame consisting of a set of point spread functions (PSF) produced by emitters through light diffraction. 
+
+[Show a figure of a data frame]
+
+Output: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. 
+
+[Show a figure of a set of emitter locations]
+
 ## Training datasets
 Training datasets are stored in the folder: **Training**. 
+
+
+
+
+(1) **2DGauss_FFL_LD_xy.zip** consists of N = 500 files each containing M = 5 emitter locations 
 
 The main parameters are given below.
  
