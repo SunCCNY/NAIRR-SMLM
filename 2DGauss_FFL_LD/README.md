@@ -5,10 +5,9 @@
 (2) Benchmark AI performance by the information-theoretical UGIA-F and UGIA-M detectors.
 (3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
 
-## Type of localization 
-Frame-by-frame localization (FFL) is performed by AI or localization algorithms. 
+## Type of localization and imaging system
+AI performs frame-by-frame localization (FFL). 
 
-## Imaging system
 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
 
 ## Training datasets
@@ -19,12 +18,13 @@ The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Emitter density |D=0.5|emitters/um^2|
 |Number of emitters |M=5 |emitters/frame |
-|Field of view |[0,Lx] x [0,Ly] |nm| 
+|Field of view |[0,Lx] x [0,Ly] = [0,3200] x [0,3200]|nm| 
 |Pixel size |Dx=100, Dy=100|nm|
-|Frame size |Kx=Lx/Dx, Ky=Ly/Dy |pixels |
+|Frame size |Kx=32, Ky=32 |pixels |
 
+
+|Emitter density |D=0.5|emitters/um^2|
 
 
 
