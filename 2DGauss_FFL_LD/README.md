@@ -19,10 +19,10 @@ The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of emitters |M=5 |emitters/frame |
-|Field of view |[0,Lx] x [0,Ly] = [0,3200] x [0,3200]|nm| 
-|Pixel size |Dx=100, Dy=100|nm|
-|Frame size |Kx=32, Ky=32 |pixels |
+|Number of emitters |M = 5 |emitters/frame |
+|Field of view |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
+|Pixel size |Dx = 100, Dy = 100|nm|
+|Frame size |Kx = 32, Ky = 32 |pixels |
 
 
 |Emitter density |D=0.5|emitters/um^2|
