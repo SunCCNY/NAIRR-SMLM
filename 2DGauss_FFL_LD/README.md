@@ -36,10 +36,7 @@ Training datasets are in the folder: **Training**.
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100|nm|
 |Frame size |Kx = 32, Ky = 32 |pixels |
-|Emitter distribution| Random, uniform in FOV| |
-
-
-
+|Emitter distribution| Random and uniform in FOV| |
 
 (2) **2DGauss_FFL_LD_xy.zip**: N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
@@ -53,7 +50,17 @@ Training datasets are in the folder: **Training**.
 
 ## Validating datasets
 
-Validating datasets are 
+The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent.
+
+
+
+## Testing datasets
+
+The testing datasets, consisting of two pairs of input and output files, are generated in the same way as the training datasets. 
+
+(1) 2DGauss_FFL_LD_Frame_Circle.tif
+
+
 
 
 
