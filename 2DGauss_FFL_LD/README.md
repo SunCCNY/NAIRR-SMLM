@@ -19,6 +19,9 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 
 [Show a figure of a data frame]
 
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Codes/FigFrame.svg)
+
+
 **Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. An example of emitter locations is shown below. 
 
 [Show a figure of a set of emitter locations]
