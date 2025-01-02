@@ -17,16 +17,11 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 
 **Input**: A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
 
-[Show a figure of a data frame]
-
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10.png)
 
+**Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. An example of emitter locations is shown below by the red dots over the corresponding data frame above. 
+
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10_Emitters.png)
-
-
-**Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. An example of emitter locations is shown below. 
-
-[Show a figure of a set of emitter locations]
 
 ## Training datasets
 Training datasets are in the folder: **Training**. 
