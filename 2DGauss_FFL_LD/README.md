@@ -50,11 +50,13 @@ Training datasets are in the folder: **Train**.
 
 ## Validating datasets
 
-The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent.
+Validating datasets are in the folder: **Validate**. 
 
-
+The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent. 
 
 ## Testing datasets
+
+Testing datasets are in the folder: **Test**. 
 
 The testing datasets, consisting of two pairs of input and output files, are generated in the same way as the training datasets. 
 
