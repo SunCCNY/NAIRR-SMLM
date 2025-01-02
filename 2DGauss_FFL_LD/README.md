@@ -51,13 +51,13 @@ Training datasets are in the folder: **Train**
 
 (3) The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
 
-## Validating datasets
+## 3. Validating datasets
 
 Validating datasets are in the folder: **Validate** 
 
 The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent. 
 
-## 3. Testing datasets
+## 4. Testing datasets
 
 Testing datasets are in the folder: **Test**  
 
@@ -75,7 +75,7 @@ The emitter locations of white dots on the helix and the activated emitters of r
 
 **Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution SMLM image of the helix. 
 
-## 4. Benchmarking and evaluating 
+## 5. Benchmarking and evaluating 
 
 The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and UGIA-M [10] estimators that achieve the Fisher information of data movie and single frames, respectively. 
 
@@ -94,7 +94,7 @@ The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-
 
 
 
-## 5. Other parameters
+## 6. Other parameters
 The  data frames are synthesized by using the following parameters. 
 
 ### Emitter distribution and intensity 
