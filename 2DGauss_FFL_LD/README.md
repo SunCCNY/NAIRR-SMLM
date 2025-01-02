@@ -50,9 +50,9 @@ Training datasets are in the folder: **Train**
 
 4.4184628e+02   5.0638849e+03
 
-... ...
-
 4.1254239e+02   6.8510823e+03
+
+... ...
 
 The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
 
