@@ -34,7 +34,7 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
-(1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
+**2DGauss_FFL_LD_Frame.zip:** N data frames used as input in training. The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
@@ -46,7 +46,7 @@ Training datasets are in the folder: **Train**
 |Frame size |Kx = 32, Ky = 32 |pixels |
 |Emitter distribution| Random and uniform in FOV| |
 
-(2) **2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
+**2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -54,7 +54,7 @@ Training datasets are in the folder: **Train**
 
 4.1254239e+02   6.8510823e+03
 
-(3) The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
+The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
 
 ## 3. Validating datasets
 
