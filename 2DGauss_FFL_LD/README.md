@@ -24,7 +24,7 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10_Emitters.png)
 
 ## Training datasets
-Training datasets are in the folder: **Train**. 
+Training datasets are in the folder: **Train** 
 
 (1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
  
@@ -50,21 +50,27 @@ Training datasets are in the folder: **Train**.
 
 ## Validating datasets
 
-Validating datasets are in the folder: **Validate**. 
+Validating datasets are in the folder: **Validate** 
 
 The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent. 
 
 ## Testing datasets
 
-Testing datasets are in the folder: **Test**. 
+Testing datasets are in the folder: **Test**  
 
-The testing datasets, consisting of two pairs of input and output files, are generated in the same way as the training datasets. 
+AI is supposed to have been trained and now is tested. 
 
-(1) 2DGauss_FFL_LD_Frame_Circle.tif
+The testing datasets are a data movie of N = 500 frames generaged by the universal model [?]-[?] where M = 600 emitters are located on a 2D helix. The 10th frame is shown below. 
 
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10.png)
 
+The emitter locations of white dots on the helix and the activated emitters of red dots over the 10th frame is shown below. 
 
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10_Emitters.png)
 
+**Input**: The N = 500 frames are input to AI. 
+
+**Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution image of the helix. 
 
 
 
