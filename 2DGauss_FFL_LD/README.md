@@ -3,12 +3,17 @@
 ## 1. Introduction 
 
 ### Purposes
+To provide 
 
-(1) Provide datasets for AI training, validating, and testing.
+(1) AI training datasets 
 
-(2) Benchmark AI performance by the information-theoretical UGIA-F and UGIA-M detectors.
+(2) AI validating datasets 
 
-(3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
+(3) AI testing datasets.
+
+(4) Benchmarking and evaluating AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
+
+(5) Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators. 
 
 ### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
