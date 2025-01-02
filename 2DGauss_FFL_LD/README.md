@@ -24,7 +24,7 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10_Emitters.png)
 
 ## Training datasets
-Training datasets are in the folder: **Training**. 
+Training datasets are in the folder: **Train**. 
 
 (1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
  
