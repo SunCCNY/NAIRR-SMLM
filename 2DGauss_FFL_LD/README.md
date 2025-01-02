@@ -1,18 +1,21 @@
 # 2DGauss_FFL_LD
 
-## Purposes
+## 1. Introduction 
+
+### Purposes
+
 (1) Provide datasets for AI training, validating, and testing.
 
 (2) Benchmark AI performance by the information-theoretical UGIA-F and UGIA-M detectors.
 
 (3) Evaluate and benchmark performance of conventional spatiotempoal localization algorithms. 
 
-## Type of localization and imaging system
+### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
 **System:** 2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
 
-## AI input and output
+### AI input and output
 AI can be trained, validated, and tested by a pair of input and output datasets. 
 
 **Input:** A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
@@ -23,7 +26,7 @@ AI can be trained, validated, and tested by a pair of input and output datasets.
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10_Emitters.png)
 
-## Training datasets
+## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
 (1) **2DGauss_FFL_LD_Frame.zip**: N data frames used as input in training. The main parameters are given below.
@@ -54,7 +57,7 @@ Validating datasets are in the folder: **Validate**
 
 The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent. 
 
-## Testing datasets
+## 3. Testing datasets
 
 Testing datasets are in the folder: **Test**  
 
@@ -72,13 +75,15 @@ The emitter locations of white dots on the helix and the activated emitters of r
 
 **Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution SMLM image of the helix. 
 
-## Benchmarking and evaluating 
+## 4. Benchmarking and evaluating 
 
 The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and UGIA-M [10] estimators that achieve the Fisher information of data movie and single frames, respectively. 
 
 The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-P, and RMSE-P are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
 
 **UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
+
+
 
 
 **UGIA-M estimator:** The UGIA-M estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
@@ -89,8 +94,7 @@ The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-
 
 
 
-
-## Other parameters
+## 5. Other parameters
 The  data frames are synthesized by using the following parameters. 
 
 ### Emitter distribution and intensity 
