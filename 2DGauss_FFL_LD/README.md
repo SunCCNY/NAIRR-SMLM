@@ -15,7 +15,7 @@
 ## AI input and output
 AI can be trained, validated, and tested by a pair of input and output datasets. 
 
-**Input**: A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
+**Input:** A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10.png)
 
@@ -38,7 +38,7 @@ Training datasets are in the folder: **Train**
 |Frame size |Kx = 32, Ky = 32 |pixels |
 |Emitter distribution| Random and uniform in FOV| |
 
-(2) **2DGauss_FFL_LD_xy.zip**: N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
+(2) **2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -68,9 +68,25 @@ The emitter locations of white dots on the helix and the activated emitters of r
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10_Emitters.png)
 
-**Input**: The N = 500 frames are input to AI. 
+**Input:** The N = 500 frames are input to AI. 
 
-**Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution image of the helix. 
+**Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution SMLM image of the helix. 
+
+## Benchmarking and evaluating 
+
+The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and UGIA-M [10] estimators that achieve the Fisher information of data movie and single frames, respectively. 
+
+The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-P, and RMSE-P are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
+
+**UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
+
+
+**UGIA-M estimator:** The UGIA-M estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
+
+
+
+
+
 
 
 
