@@ -16,6 +16,8 @@ Fig. 1 shows a diagram of an SMLM system. Ultrastructure of a biological sample 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/Docs/Fig-SMLM-system.png)
 
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/Docs/Fig-SMLM-system-2.png)
+
 ## Localization algorithm
 A localization algorithm plays a critical role in mining the information of emitter locations from a large number of data frames to reconstruct a one-shot superresolution image. Hence, the localization algorithm must be informationally efficient and computationally efficient.  
 
