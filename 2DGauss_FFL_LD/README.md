@@ -1,17 +1,17 @@
 # 2DGauss_FFL_LD
 
 ## Leaderboard
-The leaderboard will be updated after a submission. 
+The leaderboard will be updated after a submission. The dataset in Validate is used in the benchmarking and evaluating. 
 
-| Algorithm |Algorithm Type|Localization Type|Dataset|RMSMD (nm)|
-|----------:|-------------:|----------------:|------:|---------:|
-|UGIA-M     |Theoretical   |Joint frame              |Validate|4.20   |
-|UGIA-F     |Theoretical   |Frame by frame              |Validate|10.43         |
-|DECODE     |AI            |Joint frame|Validate| |
-|DeepSTORM |AI |Frame by frame|Validate| |
-|ThunderSTORM |Conventional |Frame by frame|Validate| |
-|3D-DAOSTORM|conventional|Frame by frame|Validate| |
-|SIC|Conventional |Frame by frame |Validate | |
+| Algorithm |Algorithm Type|Localization Type|RMSMD (nm)|
+|----------:|-------------:|----------------:|---------:|
+|UGIA-M     |Theoretical   |Joint frame              |4.20   |
+|UGIA-F     |Theoretical   |Frame by frame           |10.43         |
+|DECODE     |AI            |Joint frame| |
+|DeepSTORM |AI |Frame by frame| |
+|ThunderSTORM |Conventional |Frame by frame| |
+|3D-DAOSTORM|conventional|Frame by frame| |
+|SIC|Conventional |Frame by frame | |
 
 
 ## 1. Introduction 
