@@ -71,6 +71,15 @@ Testing datasets are in the folder: **Test**
 Now AI is supposed to have been trained and to be tested. 
 
 The testing datasets are a data movie of N = 500 frames where M = 600 emitters are located on a 2D helix. The 10th frame is shown below. 
+ 
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Number of frames |N = 500 |frames |
+|Number of emitters |M = 600 |emitters in specimen |
+|Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 6400] x [0, 6400]|nm| 
+|Pixel size |Dx = 100, Dy = 100 | nm^2 |
+|Frame size |Kx = 64, Ky = 64 |pixels |
+|Emitter distribution| Helix| |
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10.png)
 
