@@ -5,9 +5,9 @@ The leaderboard will be updated after a submission.
 
 | Algorithm |Algorithm Type|Localization Type|Dataset|RMSMD (nm)|
 |----------:|-------------:|----------------:|------:|---------:|
-|UGIA-M     |Theoretical   |Joint frames              |Validate|4.20   |
+|UGIA-M     |Theoretical   |Joint frame              |Validate|4.20   |
 |UGIA-F     |Theoretical   |frame by frame              |Validate|10.43         |
-|DECODE     |AI            |Joint frames|Validate| |
+|DECODE     |AI            |Joint frame|Validate| |
 |DeepSTORM |AI |Frame by frame|Validate| |
 
 ## 1. Introduction 
