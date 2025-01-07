@@ -11,7 +11,7 @@ To provide
 
 (3) AI testing datasets.
 
-(4) Benchmarking and evaluating AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
+(4) Evaluating and benchmarking AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
 
 (5) Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators. 
 
@@ -21,20 +21,20 @@ To provide
 **System:** 2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
 
 ### AI input and output
-AI can be trained, validated, and tested by a pair of input and output datasets. 
+AI can be trained, validated, tested, and benchmarked by a pair of input and output datasets. 
 
 **Input:** A data frame consisting of PSFs for activated emitters through light diffraction. An example of data frame is shown below. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10.png)
 
-**Output**: A set of 2D coordinates, each being an emitter's location, producing the data frame in the input. An example of emitter locations is shown below by the red dots over the corresponding data frame above. 
+**Output**: A set of 2D coordinates, each being an emitter's location, used in generating  the data frame in the input. An example of emitter locations is shown below by the red dots over the corresponding data frame above. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Train_Frame_10_Emitters.png)
 
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
-**2DGauss_FFL_LD_Frame.zip:** N data frames used as input in training. The main parameters are given below.
+**2DGauss_FFL_LD_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
@@ -42,11 +42,11 @@ Training datasets are in the folder: **Train**
 |Number of emitters |M = 5 |emitters/frame |
 |Emitter density |D = 0.5|emitters/um^2|
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
-|Pixel size |Dx = 100, Dy = 100|nm|
+|Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 32, Ky = 32 |pixels |
 |Emitter distribution| Random and uniform in FOV| |
 
-**2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are given row by row, e.g.
+**2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are listed row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -54,13 +54,13 @@ Training datasets are in the folder: **Train**
 
 ... ...
 
-The input data frame "2DGauss_FFL_LD_Frame_i.tif" and the corresponding output data file "2DGauss_FFL_LD_xy_i.txt" have the same index i. 
+The input data frame "2DGauss_FFL_LD_Train_Frame_n.tif" and the corresponding output data file "2DGauss_FFL_LD_Train_xy_n.txt" have the same frame index n. 
 
 ## 3. Validating datasets
 
 Validating datasets are in the folder: **Validate** 
 
-The validating datasets, consisting of 50 pairs of input and output files, are generated in the same way as the training datasets. The emitter locations are random and independent. 
+The validating datasets, consisting of N = 50 pairs of input and output files, are generated using the same parameters as those of the training datasets. 
 
 ## 4. Testing datasets
 
