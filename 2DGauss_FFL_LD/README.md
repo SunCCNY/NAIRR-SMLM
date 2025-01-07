@@ -36,7 +36,7 @@ An example of data frame is shown below.
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
-**2DGauss_FFL_LD_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
+**2DGauss_FFL_LD_Train_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
  
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
@@ -47,8 +47,9 @@ Training datasets are in the folder: **Train**
 |Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 32, Ky = 32 |pixels |
 |Emitter distribution| Random and uniform in FOV| |
+|Emitter activation| independent frame by frame | |
 
-**2DGauss_FFL_LD_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are listed row by row, e.g.
+**2DGauss_FFL_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are listed row by row, e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -70,8 +71,10 @@ Testing datasets are in the folder: **Test**
 
 Now AI is supposed to have been trained and to be tested. 
 
-The testing datasets are a data movie of N = 500 frames where M = 600 emitters are located on a 2D helix. The 10th frame is shown below. 
- 
+The testing datasets are a data movie where emitters are located on a 2D helix. The parameters of each frame are listed below.  
+
+The emitters are independely activated frame by frame by following a model of Markov chain [8]. 
+
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of frames |N = 500 |frames |
@@ -80,6 +83,9 @@ The testing datasets are a data movie of N = 500 frames where M = 600 emitters a
 |Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
+|Emitter activation| Markov chain frame by frame | |
+
+The 10th frame is shown below.
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10.png)
 
