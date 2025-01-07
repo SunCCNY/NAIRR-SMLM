@@ -118,11 +118,12 @@ The emitter locations of white dots on the helix and the activated emitters of r
 **Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution SMLM image of the helix. 
 
 ## 5. Benchmarking and evaluating 
+For the purpose of benchmarking and evaluating, the dataset of ground-truth emitter locations is not provided. 
 
-The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and UGIA-M [10] estimators that achieve the Fisher information of data movie and single frames, respectively. 
+### Procedure of evaluating
+A participant shall run a participating localization algorithm over the data movie in Benchmark to estimate a list of emitter locations. After the participant submits the list of estimated location, we will calculate its RMSMD in comparison of the ground-truth locations. The result will be posted in the leaderboard. 
 
-The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-P, and RMSE-P [9] are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
-
+### Dataset
 The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking and evaluation is generated in the same way but the following parameters are set differently.  
 
 |Parameter |Variable and value| Unit|
@@ -141,6 +142,13 @@ The 10th frame is shown below.
 The emitter locations of white dots on the helix and the activated emitters of red dots over the 10th frame is shown below. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_Frame_10_Emitters.png)
+
+### Benchmarking and evaluating
+The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and UGIA-M [10] estimators that achieve the Fisher information of data movie and single frames, respectively. Both UGIA-F and UGIA-M estimators are theoretical estimators. 
+
+The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-P, and RMSE-P [9] are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
+
+### Performance of UGIA-F and UGIA-M estimators
 
 **UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
 
