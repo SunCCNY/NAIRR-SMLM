@@ -1,6 +1,6 @@
 # 2DGauss_FFL_LD
 
-## Leaderboards
+## Leaderboard
 The leaderboard will be updated after a submission. 
 
 | Algorithm |Algorithm Type|Localization Type|Dataset|RMSMD (nm)|
