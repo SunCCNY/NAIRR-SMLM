@@ -5,12 +5,10 @@ The leaderboard will be updated after a submission.
 
 | Algorithm |Algorithm Type|Localization Type|Dataset|RMSMD (nm)|
 |----------:|-------------:|----------------:|------:|---------:|
-|UGIA-M     |Theoretical   |JFL              |Validate|4.20   |
-|UGIA-F     |Theoretical   |FFL              |Validate|10.43         |
-|DECODE     |AI            |JFL |Validate| |
-|DeepSTORM |AI |JFL|Validate| |
-
-Note: FFL - frame by frame localization; JFL - joint frame localization
+|UGIA-M     |Theoretical   |Joint frames              |Validate|4.20   |
+|UGIA-F     |Theoretical   |frame by frame              |Validate|10.43         |
+|DECODE     |AI            |Joint frames|Validate| |
+|DeepSTORM |AI |Frame by frame|Validate| |
 
 ## 1. Introduction 
 
