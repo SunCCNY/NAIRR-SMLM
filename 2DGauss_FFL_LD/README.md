@@ -9,6 +9,8 @@ The leaderboard will be updated after a submission.
 |UGIA-F     |Theoretical   |Frame by frame              |Validate|10.43         |
 |DECODE     |AI            |Joint frame|Validate| |
 |DeepSTORM |AI |Frame by frame|Validate| |
+|ThunderSTORM |Conventional |Frame by frame|Validate| |
+
 
 ## 1. Introduction 
 
