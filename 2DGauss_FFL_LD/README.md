@@ -123,12 +123,13 @@ The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [5-7] and
 
 The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-P, and RMSE-P [9] are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
 
-The data movie for benchmarking and evaluation is generated in the same way but the following parameters are set differently.  
+The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking and evaluation is generated in the same way but the following parameters are set differently.  
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of emitters |M = 200 |emitters in specimen |
 |Emitter distribution| Circle | |
+|**Emitter distance**|eD = 80 |nm |
 |Mean deactivation time | t0 = 0.90 | sec |
 |Mean activation time | t1 = 0.04 | sec |
 |Mean photoactivatable time| t = 6 | sec |
