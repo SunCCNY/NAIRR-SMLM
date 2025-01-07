@@ -5,8 +5,8 @@ The leaderboard will be updated after a submission.
 
 | Algorithm |Algorithm Type|Localization Type|Dataset|RMSMD (nm)|
 |----------:|-------------:|----------------:|------:|---------:|
-|UGIA-M     |Theoretical   |JFL              |2DGauss_FFL_LD|   |
-|UGIA-F     |Theoretical   |FFL              |Validate|         |
+|UGIA-M     |Theoretical   |JFL              |2DGauss_FFL_LD|4.20   |
+|UGIA-F     |Theoretical   |FFL              |Validate|10.43         |
 
 Note: FFL - frame by frame localization; JFL - joint frame localization
 
