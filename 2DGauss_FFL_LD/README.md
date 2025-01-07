@@ -129,7 +129,7 @@ The emitters with the same adjacent distance are located on a circle. The data m
 |:-----|:-----|:-----|
 |Number of emitters |M = 200 |emitters in specimen |
 |Emitter distribution| Circle | |
-|**Emitter distance**|eD = 80 |nm |
+|**Emitter distance**|**eD = 80**|**nm** |
 |Mean deactivation time | t0 = 0.90 | sec |
 |Mean activation time | t1 = 0.04 | sec |
 |Mean photoactivatable time| t = 6 | sec |
