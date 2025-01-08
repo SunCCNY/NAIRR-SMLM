@@ -64,7 +64,9 @@ The performance of a trained AI can be evaluated by the universal quality metric
 * If the number of frames that each emitter is activated in the testing data movie is further given, the RMSMD-P and RMSE-P can be calculated. 
 
 ## Benchmarking
-The performance of a trained AI can also be benchmarked by the unbiased Gaussian information achieving for a movie (UGIA-M) estimator [10] and the unbiased Gaussian information-achieving for a frame  (UGIA-F) estimator [7]. Both UGIA-M and UGIA-F estimators are theoretical estimators derived from the Fisher information. The UGIA-M estimator achieves the Fisher information of the data movie and the UGIA-F estimator achieves the Fisher information of each data frame. 
+The performance of a trained AI can also be benchmarked by the unbiased Gaussian information achieving for a movie (UGIA-M) estimator [10] and the unbiased Gaussian information-achieving for a frame  (UGIA-F) estimator [7]. 
+
+Both UGIA-M and UGIA-F estimators are theoretical estimators derived from the Fisher information. The UGIA-M estimator achieves the Fisher information of the data movie and the UGIA-F estimator achieves the Fisher information of each data frame. 
 
 Given a testing dataset, the UGIA-M estimator can generate a set of estimated emitter locations, and the RMSMD, RMSMD-P and RMSE-P can be calculated, which can be used to benchmark the performance of AI. 
 
