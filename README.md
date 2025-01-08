@@ -70,6 +70,9 @@ Given a testing dataset, the UGIA-M estimator can generate a set of estimated em
 
 Similarly, given a testing dataset, the UGIA-F estimator can generate a set of estimated emitter locations, and the RMSMD, RMSMD-P and RMSE-P can be calculated, which can be used to benchmark the performance of AI. 
 
+# Codes
+All codes that generate the datasets are provided so that a researcher can easily modify the parameters to generate desired datasets.  
+
 # Acknowledgments
 This work was partly supported by the NSF under Grant Number CCF-2313072 and the Army Research Office under Grant Number W911NF-23-1-0189. The views and conclusions contained in this document are those of the author and should not be interpreted as representing the official policies, either expressed or implied, of the Army Research Office or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation.
 
