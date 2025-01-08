@@ -186,6 +186,11 @@ The corresponding 2D coordinate in a data frame is shown below.
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
+## 7. Codes
+All the codes that generate the datasets are in the folder: **Codes**  
+
+A researcher can modify the parameters to generate desired datasets with acknowledging of the codes in a publication. 
+
 # References
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, 18(11), 111418-14(2013). 
 
