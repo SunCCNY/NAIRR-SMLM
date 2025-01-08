@@ -18,9 +18,9 @@ The leaderboard will be updated after a submission. The dataset in Validate is u
 ### Purposes
 To provide 
 
-(1) AI training datasets 
+* (1) AI training datasets 
 
-(2) AI validating datasets 
+* (2) AI validating datasets 
 
 (3) AI testing datasets.
 
