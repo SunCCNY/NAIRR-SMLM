@@ -22,7 +22,7 @@ To provide
   
 * AI validating datasets 
 
-* AI testing datasets.
+* AI testing datasets
 
 * Evaluating and benchmarking AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
   
@@ -31,7 +31,7 @@ To provide
 ### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
-**System:** 2D imaging, Gaussian point spread functions (PSF), and low density (LD) of emitters. 
+**System:** 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
 
 ### AI input and output
 AI can be trained, validated, tested, and benchmarked by a pair of input and output datasets. 
