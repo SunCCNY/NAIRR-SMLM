@@ -23,7 +23,6 @@ To provide
 * AI testing datasets.
 * Evaluating and benchmarking AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
 * Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators. 
-
 ### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
