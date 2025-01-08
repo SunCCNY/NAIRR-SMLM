@@ -189,13 +189,8 @@ The corresponding 2D coordinate in a data frame is shown below.
 # References
 [1] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, 18(11), 111418-14(2013). 
 [2] Y. Sun, and Y. Guan, "Effect of unknown emitter intensities on localization accuracy in stochastic optical localization nanoscopy using single frames," JOSA A, 38(12), 1830-1840(2021). 
-
 [3] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, 8(1), 17211(2018). 
-
 [4] Y. Sun, "Markov chain models of emitter activations in single molecule localization microscopy," Optics Express, 32(19), 33779-33794(2024).
-
 [5] Y. Sun, "Partition of estimated locations: an approach to accurate quality metrics for stochastic optical localization nanoscopy," JOSA A, 39(12), 2307-2315(2022).
-
 [6] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf. (QBI2020), Oxford, UK, Jan. 6-9, 2020. 
-
-[7] Y. Sun, "Information sufficient segmentation and signal-to-noise ratio in stochastic optical localization nanoscopy," Optics Letters, 45(21), 6102-6105(2020).
+[7] Y. Sun, "Information sufficient segmentation and signal-to-noise ratio in stochastic optical localization nanoscopy," Optics Letters, 45(21), 6102-6105(2020). 
