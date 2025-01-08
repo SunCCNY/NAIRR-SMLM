@@ -5,8 +5,8 @@ The leaderboard will be updated after a submission. The dataset in Validate is u
 
 | Algorithm |Algorithm Type|Localization Type|RMSMD (nm)|
 |----------:|-------------:|----------------:|---------:|
-|UGIA-M     |Theoretical   |Joint frame              |4.20   |
-|UGIA-F     |Theoretical   |Frame by frame           |10.43         |
+|UGIA-M     |Theoretical   |Joint frame      |4.20      |
+|UGIA-F     |Theoretical   |Frame by frame   |10.43     |
 |DECODE     |AI            |Joint frame| |
 |DeepSTORM |AI |Frame by frame| |
 |ThunderSTORM |Conventional |Frame by frame| |
@@ -158,64 +158,54 @@ The quality metrics of the root mean square minimum distance (RMSMD) [7], RMSMD-
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_UGIA-M.png)
 
-
-
-
-
-
-
-
 ## 6. Other parameters
-The  data frames are synthesized by using the following parameters. 
+**Independent variables**
 
-### Emitter distribution and intensity 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Emitter intensity |I = 300000|photons/sec/emitter|
 |Analog digital unit |ADU = 1|photons/unit|
+|Frame time |Dt = 0.01|sec|
+|Numerical aperture |na = 1.40| | |
+|Fluorescence wavelength |lambda = 723|nm|Dye Alexa 700 |
+|Mean of Poisson noise |b = 5|photons/sec/nm^2|
+|Variance of Gaussian noise |G = 3|photons/sec/nm^2| 
+|Mean of Gaussian noise |mu = 5|photons/sec/nm^2|
 
-### Data frame 
+**Corresponding composite variable**
+
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Frame time |Dt = 0.01|sec|
-|Correspondingly | |
 |Frame rate|1/Dt = 100|frames/sec|
 |Photon count |Dt\*I = 3000|photons/frame/emitter|
+|Standard deviation |sigma = 108.81|nm| |
+|Full-width half-maximum |FWHM = 256.22|nm| |
+|Signal to noise ratio [5] |SNR = -6.01|dB|
+|Effective camera offset |Coff = 500 |photons/pixel|
+
+SNR is defined in [4]. 
 
 The corresponding 2D coordinate in a data frame is shown below. 
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
-### Optical system
-|Parameter |Variable and value|Unit | |
-|:-----|:-----|:-----|:-----|
-|Numerical aperture |na = 1.40| | |
-|Fluorescence wavelength |lambda = 723|nm|Dye Alexa 700 |
-|Correspondingly| | | |
-|Standard deviation |sigma = 108.81|nm| |
-|Full-width half-maximum |FWHM = 256.22|nm| |
+# References
+[1] E. Betzig, G. H. Patterson, R. Sougrat, O. W. Lindwasser, S. Olenych, J. S. Bonifacino, M. W. Davidson, J. Lippincott-Schwartz, and H. F. Hess, "Imaging intracellular fluorescent proteins at nanometer resolution," Science, 313(5793), 1642–1645(2006). 
 
-PSF is 2D Gaussian and its standard deviation is estimated from an Airy PSF by sigma = 1.3238/a where a = 2\*pi\*na/lambda [1]. 
+[2] S. T. Hess, T. P. Girirajan, and M. D. Mason, "Ultra-high resolution imaging by fluorescence photoactivation localization microscopy," Biophys. J., 91(11), 4258–4272(2006). 
 
-### Noise 
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
-|Mean of Poisson noise |b = 5|photons/sec/nm<sup>2</sup>|
-|Variance of Gaussian noise |G = 3|photons/sec/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu = 5|photons/sec/nm<sup>2</sup>|
+[3] M. J. Rust, M. Bates, and X. Zhuang, "Sub-diffraction-limit imaging by stochastic optical reconstruction microscopy (STORM)," Nat. Methods, 3(10), 793-796(2006). 
 
-**Corresponding signal to noise ratios and camera offset**
+[4] M. Heilemann, S. v. Linde , M. Schüttpelz, R. Kasper, B. Seefeldt, A. Mukherjee, P. Tinnefeld, and M. Sauer, "Subdiffraction‐resolution fluorescence imaging with conventional fluorescent probes," Angew. Chem. Int. Ed., 47(33), 6172–6176(2008). 
 
-|Parameter |Variable and value| Unit|
-|:-----|:-----|:-----|
-|Signal to Poisson noise ratio |rp = 60000|nm<sup>2</sup>/emitter|
-|                             |SPNR = -3.97|dB|
-|Signal to Gaussian noise ratio |rg = 100000|nm<sup>2</sup>/emitter|
-|                             |SGNR = -1.75|dB|
-|Total signal to noise ratio |r = 37500|nm<sup>2</sup>/emitter|
-|                           |SNR = -6.01|dB|
-|Effective camera offset |Coff = 500 |photons/pixel|
+[5] Y. Sun, "Localization precision of stochastic optical localization nanoscopy using single frames," J. Biomed. Optics, 18(11), 111418-14(2013). 
 
-The mean of Gaussian noise mu includes the effect of camera offset. When mu is solely contributed by the camera offset, i.e. the Gaussian noise has a zero mean, the effective camera offset is Coff = Dt\*Dx\*Dy\*mu. 
+[6] Y. Sun, and Y. Guan, "Effect of unknown emitter intensities on localization accuracy in stochastic optical localization nanoscopy using single frames," JOSA A, 38(12), 1830-1840(2021). 
 
-SPNR, SGNR, and SNR are defined in [4]. 
+[7] Y. Sun, "Root mean square minimum distance as a quality metric for stochastic optical localization nanoscopy images," Sci. Reports, 8(1), 17211(2018). 
+
+[8] Y. Sun, "Markov chain models of emitter activations in single molecule localization microscopy," Optics Express, 32(19), 33779-33794(2024).
+
+[9] Y. Sun, "Partition of estimated locations: an approach to accurate quality metrics for stochastic optical localization nanoscopy," JOSA A, 39(12), 2307-2315(2022).
+
+[10] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf. (QBI2020), Oxford, UK, Jan. 6-9, 2020. 
