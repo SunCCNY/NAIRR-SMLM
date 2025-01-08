@@ -10,7 +10,9 @@ The SMLM technique, including PALM [1], FPALM [2], STORM [3] and dSTORM [4], was
 
 ## SMLM 
 
-The figure below shows a diagram of an SMLM system. Ultrastructure of a biological sample is labeled with fluorescent molecules (emitters). The emitters are excited by lasers and randomly emits fluorescence that passes through an optical system. A camera acquires a data movie consisting of a large number of data frames. Each data frame records the spots of light diffraction from the activated emitters plus the background fluorescence noise and circuitry thermal noise. A localization algorithm estimates the emitter locations, representing a superresolution image of the ultrastructure of the biological sample. 
+The figure below shows a diagram of an SMLM system. Ultrastructure of a biological sample is labeled with fluorescent molecules (emitters). 
+
+The emitters are excited by lasers and randomly emits fluorescence that passes through an optical system. A camera acquires a data movie consisting of a large number of data frames. Each data frame records the spots of light diffraction from the activated emitters plus the background fluorescence noise and circuitry thermal noise. A localization algorithm estimates the emitter locations, representing a superresolution image of the ultrastructure of the biological sample. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/Docs/Fig-SMLM-system-3.jpg)
 
