@@ -30,14 +30,12 @@ In each case, there are three datasets for AI training, validating and testing, 
 Each dataset consists of two components:
 
 * A set of emitter locations (2D/3D coordinates) representing the original image of biological ultrastrucutre.
-
 * A data movie consisting of a sequence of data frames synthesized with the emitter locations according to the model of data movie [5-8]. 
 
 ## Model of data movie
 The model of data movie consists of two sub-models: 
 
 * The model of a data frame [5, 6]; 
-
 * The model of emitter photoactivation processes [7, 8]. 
 
 All parameters used to synthesize the data movies are defined in [5-8]. 
@@ -47,14 +45,12 @@ All parameters used to synthesize the data movies are defined in [5-8].
 Given a training dataset, AI can be trained by supervised learning where 
 
 * the input is the data movie; 
-
 * the desired output is the set of corresponding emitter locations. 
 
 ## Testing 
 Given a testing dataset, a trained AI can be tested where 
 
 * the input is the data movie of the testing dataset;
-
 * the output is a set of estimated emitter locations, i.e., the reconstructed superresolution image by the AI. 
 
 # Evaluating and Benchmarking
@@ -62,7 +58,6 @@ Given a testing dataset, a trained AI can be tested where
 The performance of a trained AI can be evaluated by the universal quality metrics of root mean square minimum distance (RMSMD) [7], RMSMD with partition (RMSMD-P) [9], and root mean square error (RMSE) with partition (RMSE-P) [9]. Specifically, 
 
 * Given the set of emitter locations in the testing dataset and the AI outputted set of emitter locations, their error can be calculated in terms of RMSMD. 
-
 * If the number of frames that each emitter is activated in the testing data movie is further given, the RMSMD-P and RMSE-P can be calculated. 
 
 ## Benchmarking
