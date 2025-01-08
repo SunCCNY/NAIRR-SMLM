@@ -18,11 +18,15 @@ The leaderboard will be updated after a submission. The dataset in Validate is u
 ### Purposes
 To provide 
 
-* AI training datasets 
+* AI training datasets
+  
 * AI validating datasets 
+
 * AI testing datasets.
+
 * Evaluating and benchmarking AI performance by the UGIA-F and UGIA-M estimators that achieve the Fisher information of single frames and entire data movie, respectively.
-* Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators. 
+* Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators.
+
 ### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
