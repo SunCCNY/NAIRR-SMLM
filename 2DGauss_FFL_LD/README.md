@@ -1,7 +1,7 @@
 # 2DGauss_FFL_LD
 
-## Leaderboard
-The leaderboard will be updated after a submission. The dataset in Validate is used in the benchmarking and evaluating. 
+## Leaderboard in benchmarking and evaluating
+The leaderboard will be updated after a submission. The dataset in Benchmark is used in the benchmarking and evaluating. 
 
 | Algorithm |Algorithm Type|Localization Type|RMSMD (nm)|
 |----------:|-------------:|----------------:|---------:|
@@ -157,7 +157,22 @@ The quality metrics of the root mean square minimum distance (RMSMD) [3], RMSMD-
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_UGIA-M.png)
 
-## 6. Other parameters
+## 6. Participation in benchmarking and evaluating
+A participant algorithm shall run over the data movie in fold **Benchmark**, produce a list of 2D coordinates (x,y) in nm for the estimated emitter locations, and saved them row by row in a .txt file: e.g.
+
+4.4184628e+02 5.0638849e+03
+
+4.2119986e+02 5.8867272e+03
+
+... ...
+
+The filenames in submission shall be in the format:
+
+**2DGauss_FFL_LD_xy_algorithmName.txt** 
+
+The RMSMD of the submitted list will be posted in the Leaderboard. 
+
+## 7. Other parameters
 **Independent parameters**
 
 |Parameter |Variable and value| Unit|
@@ -186,7 +201,7 @@ The corresponding 2D coordinate in a data frame is shown below.
 
 ![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
 
-## 7. Codes
+## 8. Codes
 All the codes that generate the datasets are in the folder: **Codes**  
 
 A researcher can modify the parameters to generate desired datasets with acknowledging of the codes in a publication. 
