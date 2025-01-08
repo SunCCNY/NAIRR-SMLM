@@ -5,9 +5,9 @@ The leaderboard will be updated after a submission. The dataset in Validate is u
 
 | Algorithm |Algorithm Type|Localization Type|RMSMD (nm)|
 |----------:|-------------:|----------------:|---------:|
-|UGIA-M     |Theoretical   |Joint frame      |4.20      |
+|UGIA-M     |Theoretical   |Joint frames      |4.20      |
 |UGIA-F     |Theoretical   |Frame by frame   |10.43     |
-|DECODE     |AI            |Joint frame| |
+|DECODE     |AI            |Joint frames| |
 |DeepSTORM |AI |Frame by frame| |
 |ThunderSTORM |Conventional |Frame by frame| |
 |3D-DAOSTORM|conventional|Frame by frame| |
