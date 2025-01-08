@@ -28,14 +28,15 @@ In each case, there are three datasets for AI training, validating and testing, 
 Each dataset consists of two components:
 
 * A set of emitter locations (2D/3D coordinates) representing the original image of biological ultrastrucutre.
+
 * A data movie consisting of a sequence of data frames synthesized with the emitter locations according to the model of data movie [5-8]. 
 
 ## Model of data movie
 The model of data movie consists of two sub-models: 
 
-(1) the model of a data frame [5, 6]; 
+* The model of a data frame [5, 6]; 
 
-(2) the model of emitter photoactivation processes [7, 8]. 
+* The model of emitter photoactivation processes [7, 8]. 
 
 All parameters used to synthesize the data movies are defined in [5-8]. 
 
@@ -43,24 +44,24 @@ All parameters used to synthesize the data movies are defined in [5-8].
 ## Training
 Given a training dataset, AI can be trained by supervised learning where 
 
-(1) the input is the data movie; 
+* the input is the data movie; 
 
-(2) the desired output is the set of corresponding emitter locations. 
+* the desired output is the set of corresponding emitter locations. 
 
 ## Testing 
 Given a testing dataset, a trained AI can be tested where 
 
-(1) the input is the data movie of the testing dataset
+* the input is the data movie of the testing dataset;
 
-(2) the output is a set of estimated emitter locations, i.e., the reconstructed superresolution image by the AI. 
+* the output is a set of estimated emitter locations, i.e., the reconstructed superresolution image by the AI. 
 
 # Evaluating and Benchmarking
 ## Evaluating
 The performance of a trained AI can be evaluated by the universal quality metrics of root mean square minimum distance (RMSMD) [7], RMSMD with partition (RMSMD-P) [9], and root mean square error (RMSE) with partition (RMSE-P) [9]. Specifically, 
 
-(1) Given the set of emitter locations in the testing dataset and the AI outputted set of emitter locations, their error can be calculated in terms of RMSMD. 
+* Given the set of emitter locations in the testing dataset and the AI outputted set of emitter locations, their error can be calculated in terms of RMSMD. 
 
-(2) If the number of frames that each emitter is activated in the testing data movie is further given, the RMSMD-P and RMSE-P can be calculated. 
+* If the number of frames that each emitter is activated in the testing data movie is further given, the RMSMD-P and RMSE-P can be calculated. 
 
 ## Benchmarking
 The performance of a trained AI can also be benchmarked by the unbiased Gaussian information achieving for a movie (UGIA-M) estimator [10] and the unbiased Gaussian information-achieving for a frame  (UGIA-F) estimator [7]. Both UGIA-M and UGIA-F estimators are theoretical estimators derived from the Fisher information. The UGIA-M estimator achieves the Fisher information of the data movie and the UGIA-F estimator achieves the Fisher information of each data frame. 
