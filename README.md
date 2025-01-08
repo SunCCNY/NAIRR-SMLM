@@ -27,9 +27,9 @@ In each case, there are three datasets for AI training, validating and testing, 
 ## Components 
 Each dataset consists of two components:
 
-(1) A set of emitter locations (2D/3D coordinates) representing the original image of biological ultrastrucutre; 
+* A set of emitter locations (2D/3D coordinates) representing the original image of biological ultrastrucutre; 
 
-(2) A data movie consisting of a sequence of data frames synthesized with the emitter locations according to the model of data movie [5-8]. 
+* A data movie consisting of a sequence of data frames synthesized with the emitter locations according to the model of data movie [5-8]. 
 
 ## Model of data movie
 The model of data movie consists of two sub-models: 
