@@ -98,6 +98,7 @@ The emitters are independently activated frame by frame following a model of Mar
 |Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
+|**Emitter distance**|**eD = 80**|**nm** |
 |Emitter activation| Markov chain frame by frame | |
 |Frame time | Dt = 0.01 | sec |
 |Mean deactivation time | t0 = 1.0 | sec |
