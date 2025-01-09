@@ -103,7 +103,7 @@ The emitters are independently activated frame by frame following a model of Mar
 |Frame time | Dt = 0.01 | sec |
 |Mean deactivation time | t0 = 1.0 | sec |
 |Mean activation time | t1 = 0.025 | sec |
-|Mean photoactivatable time| t = 4 | sec |
+|Mean photoactivatable time| t = 4.5 | sec |
 
 The 10th frame is shown below.
 
@@ -128,6 +128,7 @@ The emitters with the same adjacent distance are located on a circle. The data m
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
+|Number of frames |N = 500 |frames |
 |Number of emitters |M = 200 |emitters in specimen |
 |Emitter distribution| Circle | |
 |**Emitter distance**|**eD = 80**|**nm** |
