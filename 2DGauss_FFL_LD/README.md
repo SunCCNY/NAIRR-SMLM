@@ -124,7 +124,7 @@ For the purpose of benchmarking and evaluating, the dataset of ground-truth emit
 A participant shall run a participating localization algorithm over the data movie in Benchmark to estimate a list of emitter locations. After the participant submits the list of estimated location, we will calculate its RMSMD in comparison of the ground-truth locations. The result will be posted in the leaderboard. 
 
 ### Dataset
-The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking and evaluation is generated in the same way but the following parameters are set differently.  
+The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking and evaluation is generated using the same parameters of Testing but the following parameters are set differently.  
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
