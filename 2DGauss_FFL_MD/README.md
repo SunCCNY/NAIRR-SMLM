@@ -31,7 +31,7 @@ To provide
 ### Type of localization and imaging system
 **Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
 
-**System:** 2D imaging, Gaussian point spread function (PSF), and middle density (MD) of emitters. 
+**System:** 2D imaging, Gaussian point spread function (PSF), and medium density (MD) of emitters. 
 
 ### AI input and output
 AI can be trained, validated, tested, and benchmarked by a pair of input and output datasets. 
