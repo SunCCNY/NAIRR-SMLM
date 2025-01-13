@@ -56,7 +56,7 @@ The emitters are randomly distributed and independent frame by frame.
 |Parameter |Variable and value| Unit| 
 |:-----|:-----|:-----| 
 |Number of frames |N = 500 |frames | 
-|Number of emitters |M = 20 |emitters/frame | 
+|Number of emitters |M = 81 |emitters/frame | 
 |Emitter density |D = 2|emitters/um^2| 
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100 | nm^2 | 
