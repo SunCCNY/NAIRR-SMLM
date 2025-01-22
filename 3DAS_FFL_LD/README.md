@@ -146,11 +146,11 @@ The ground-truth emitter locations are shown below.
 
 The 10th frame is shown below.
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_Frame_10.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_Frame_10.png)
 
 The emitter locations of white dots on the helix and the activated emitters of red dots over the 10th frame is shown below. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_Frame_10_Emitters.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_Frame_10_Emitters.png)
 
 ### Benchmarking and evaluating
 The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [1-3] and UGIA-M [6] estimators that achieve the Fisher information of data movie and single frames, respectively. Both UGIA-F and UGIA-M estimators are theoretical estimators. 
@@ -161,24 +161,24 @@ The quality metrics of the root mean square minimum distance (RMSMD) [3], RMSMD-
 
 **UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_UGIA-F.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_xyz_UGIA-F.png)
 
 **UGIA-M estimator:** The UGIA-M estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Benchmark_UGIA-M.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_xyz_UGIA-M.png)
 
 ## 6. Participation in benchmarking and evaluating
 A participant algorithm shall run over the data movie in fold **Benchmark**, produce a list of 2D coordinates (x,y) in nm for the estimated emitter locations, and saved them row by row in a .txt file: e.g.
 
-4.4184628e+02 5.0638849e+03
+4.4184628e+02 5.0638849e+03 -4.2658749e+03
 
-4.2119986e+02 5.8867272e+03
+4.2119986e+02 5.8867272e+03  4.5179889e+02 
 
 ... ...
 
 The filenames in submission shall be in the format:
 
-**2DGauss_FFL_LD_xy_algorithmName.txt** 
+**3DAS_FFL_LD_xyz_algorithmName.txt** 
 
 The RMSMD of the submitted list will be posted in the Leaderboard. 
 
@@ -187,13 +187,16 @@ The RMSMD of the submitted list will be posted in the Leaderboard.
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Emitter intensity |I = 300000|photons/sec/emitter|
+|Emitter intensity |I = 240000|photons/sec/emitter|
 |Analog digital unit |ADU = 1|photons/unit|
 |Frame time |Dt = 0.01|sec|
-|Numerical aperture |na = 1.40| | |
-|Fluorescence wavelength |lambda = 723|nm|Dye Alexa 700 |
-|Mean of Poisson noise |b = 5|photons/sec/nm^2|
-|Variance of Gaussian noise |G = 3|photons/sec/nm^2| 
+|AS PSF |c=205, d=290	| nm |
+| |sigmax0=140	| nm |
+| |Ax=0.05, Bx=0.03	|  |
+| |sigmay0=135	| nm |
+| |Ay=-0.01, By=0.02|  |	
+|Mean of Poisson noise |b = 0.3|photons/sec/nm^2|
+|Variance of Gaussian noise |G = 0.2|photons/sec/nm^2| 
 |Mean of Gaussian noise |mu = 5|photons/sec/nm^2|
 
 **Corresponding composite parameters**
@@ -201,10 +204,8 @@ The RMSMD of the submitted list will be posted in the Leaderboard.
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Frame rate|1/Dt = 100|frames/sec|
-|Photon count |Dt\*I = 3000|photons/frame/emitter|
-|Standard deviation |sigma = 108.81|nm| |
-|Full-width half-maximum |FWHM = 256.22|nm| |
-|Signal to noise ratio [7] |SNR = -6.01|dB|
+|Photon count |Dt\*I = 2400|photons/frame/emitter|
+|Signal to noise ratio [8] |SNR = 1.22|dB|
 |Effective camera offset |Coff = 500 |photons/pixel|
 
 The corresponding 2D coordinate in a data frame is shown below. 
@@ -230,3 +231,5 @@ A researcher can modify the parameters to generate desired datasets with acknowl
 [6] Y. Sun, "Spatiotemporal resolution as an information theoretical property of stochastic optical localization nanoscopy," 2020 Quantitative BioImaging Conf. (QBI2020), Oxford, UK, Jan. 6-9, 2020. 
 
 [7] Y. Sun, "Information sufficient segmentation and signal-to-noise ratio in stochastic optical localization nanoscopy," Optics Letters, 45(21), 6102-6105(2020). 
+
+[8] M. Sun and Y. Sun, "Information sufficient segmentation and signal-to-noise ratio for 3D astigmatism stochastic optical localization nanoscopy," Electr. Letters, 58(2), 58-60(2021).
