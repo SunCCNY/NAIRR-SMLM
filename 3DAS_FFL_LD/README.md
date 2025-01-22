@@ -190,7 +190,7 @@ The RMSMD of the submitted list will be posted in the Leaderboard.
 |Emitter intensity |I = 240000|photons/sec/emitter|
 |Analog digital unit |ADU = 1|photons/unit|
 |Frame time |Dt = 0.01|sec|
-|AS PSF |c=205, d=290	| nm |
+|Astigmatic PSF |c=205, d=290	| nm |
 | |sigmax0=140	| nm |
 | |Ax=0.05, Bx=0.03	|  |
 | |sigmay0=135	| nm |
