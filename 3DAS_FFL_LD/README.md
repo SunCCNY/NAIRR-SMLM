@@ -94,8 +94,8 @@ The emitters are independently activated frame by frame following a model of Mar
 |:-----|:-----|:-----|
 |Number of frames |N = 500 |frames |
 |Number of emitters |M = 400 |emitters in specimen |
-|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 6400] x [0, 6400] x [-400, 400]|nm| 
-|Pixel size |Dx = 100, Dy = 100 | nm^2 |
+|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 6400] x [0, 6400] x [-400, 400]|nm^3| 
+|Pixel size |Dx = 100, Dy = 100 | nm |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
 |**Emitter distance**|**eD = 120**|**nm** |
