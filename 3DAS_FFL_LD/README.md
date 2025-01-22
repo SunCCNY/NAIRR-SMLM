@@ -57,22 +57,22 @@ The emitters are randomly distributed and independent frame by frame.
 |:-----|:-----|:-----| 
 |Number of frames |N = 500 |frames | 
 |Number of emitters |M = 5 |emitters/frame | 
-|Emitter density |D = 0.5|emitters/um^2| 
-|Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
+|Emitter density on camera plane |D = 0.5|emitters/um^2| 
+|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz]= [0, 3200] x [0, 3200] x [-400, 400]|nm| 
 |Pixel size |Dx = 100, Dy = 100 | nm^2 | 
 |Frame size |Kx = 32, Ky = 32 |pixels | 
 |Emitter distribution| Random and uniform in FOV| | 
 |Emitter activation| independent frame by frame | | 
 
-**2DGauss_FFL_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are listed row by row, e.g.
+**3dAS_FFL_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 3D emitter locations (x,y,z) in nm in each file are listed row by row, e.g.
 
-4.4184628e+02   5.0638849e+03
+2.6071158e+03   3.1212930e+02  -2.7390953e+02
 
-4.1254239e+02   6.8510823e+03
+2.8985342e+03   8.9119430e+02   3.7647423e+02
 
 ... ...
 
-The input data frame "2DGauss_FFL_LD_Train_Frame_n.tif" and the corresponding output emitter-location file "2DGauss_FFL_LD_Train_xy_n.txt" have the same frame index n. 
+The input data frame "3DAS_FFL_LD_Train_Frame_n.tif" and the corresponding output emitter-location file "3DAS_FFL_LD_Train_xyz_n.txt" have the same frame index n. 
 
 ## 3. Validating datasets
 
@@ -86,32 +86,36 @@ Testing datasets are in the folder: **Test**
 
 Now AI is supposed to have been trained and to be tested. 
 
-The testing datasets are a data movie where emitters are located on a 2D helix. The parameters of each frame are listed below.  
+The testing datasets are a data movie where emitters are located on a 3D helix. The parameters of each frame are listed below.  
 
 The emitters are independently activated frame by frame following a model of Markov chain [4]. 
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of frames |N = 500 |frames |
-|Number of emitters |M = 600 |emitters in specimen |
-|Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 6400] x [0, 6400]|nm| 
+|Number of emitters |M = 400 |emitters in specimen |
+|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 6400] x [0, 6400] x [-400, 400]|nm| 
 |Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
-|**Emitter distance**|**eD = 80**|**nm** |
+|**Emitter distance**|**eD = 120**|**nm** |
 |Emitter activation| Markov chain frame by frame | |
 |Frame time | Dt = 0.01 | sec |
-|Mean deactivation time | t0 = 1.0 | sec |
-|Mean activation time | t1 = 0.025 | sec |
-|Mean photoactivatable time| t = 4.5 | sec |
+|Mean deactivation time | t0 = 0.8 | sec |
+|Mean activation time | t1 = 0.05 | sec |
+|Mean photoactivatable time| t = 8.0 | sec |
+
+The ground-truth emitter locations are shown below. 
+
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Test_xyz.png)
 
 The 10th frame is shown below.
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Test_Frame_10.png)
 
 The emitter locations of white dots on the helix and the activated emitters of red dots over the 10th frame is shown below. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_FFL_LD/Docs/Fig2DGauss_FFL_LD_Test_Frame_10_Emitters.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Test_Frame_10_Emitters.png)
 
 **Input:** The N frames are input to AI. 
 
@@ -129,12 +133,16 @@ The emitters with the same adjacent distance are located on a circle. The data m
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of frames |N = 500 |frames |
-|Number of emitters |M = 200 |emitters in specimen |
+|Number of emitters |M = 150 |emitters in specimen |
 |Emitter distribution| Circle | |
-|**Emitter distance**|**eD = 80**|**nm** |
-|Mean deactivation time |t0 = 0.90 | sec |
-|Mean activation time |t1 = 0.04 | sec |
-|Mean photoactivatable time| t = 6 | sec |
+|**Emitter distance**|**eD = 120**|**nm** |
+|Mean deactivation time |t0 = 0.80 | sec |
+|Mean activation time |t1 = 0.05 | sec |
+|Mean photoactivatable time| t = 8.0 | sec |
+
+The ground-truth emitter locations are shown below. 
+
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_xyz.png)
 
 The 10th frame is shown below.
 
