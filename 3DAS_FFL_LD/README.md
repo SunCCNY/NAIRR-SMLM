@@ -40,11 +40,11 @@ AI can be trained, validated, tested, and benchmarked by a pair of input and out
 
 An example of data frame is shown below. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_Frame_10.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Train_Frame_10.png)
 
 **Output**: A set of 3D coordinates, each being an emitter's location, used in generating  the data frame in the input. An example of emitter locations is shown below by the red dots over the corresponding data frame above. 
 
-![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_Frame_10_Emitters.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Train_Frame_10_Emitters.png)
 
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
