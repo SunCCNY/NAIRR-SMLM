@@ -168,7 +168,7 @@ The quality metrics of the root mean square minimum distance (RMSMD) [3], RMSMD-
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/3DAS_FFL_LD/Docs/Fig3DAS_FFL_LD_Benchmark_xyz_UGIA-M.png)
 
 ## 6. Participation in benchmarking and evaluating
-A participant algorithm shall run over the data movie in fold **Benchmark**, produce a list of 2D coordinates (x,y) in nm for the estimated emitter locations, and saved them row by row in a .txt file: e.g.
+A participant algorithm shall run over the data movie in fold **Benchmark**, produce a list of 2D coordinates (x,y,z) in nm for the estimated emitter locations, and saved them row by row in a .txt file: e.g.
 
 4.4184628e+02 5.0638849e+03 -4.2658749e+03
 
