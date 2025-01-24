@@ -88,8 +88,9 @@ The emitters are independently and identically activated frame by frame accordin
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
 |Number of emitters |M = 512 |ground-truth emitters|
-|Emitter density |eD = 50|emitters/um^2| 
+|Emitter density |D = 50|emitters/um^2| 
 |Emitter distribution| Random and uniform in FOV| | 
+|Emitter activation| Markov chain frame by frame | |
 |Mean deactivation time |t0 = 0.60 | sec |
 |Mean activation time |t1 = 0.015 | sec |
 |Mean photoactivatable time| t = 10.0 | sec |
@@ -108,22 +109,15 @@ Now AI is supposed to have been trained and to be tested.
 
 The testing datasets are a data movie where emitters are located on a 2D helix. The parameters of each frame are listed below.  
 
-The emitters are independently activated frame by frame following a model of Markov chain [4]. 
-
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of frames |N = 500 |frames |
+|Number of frames |N = 1000 |frames |
 |Number of emitters |M = 600 |emitters in specimen |
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 6400] x [0, 6400]|nm| 
 |Pixel size |Dx = 100, Dy = 100 | nm^2 |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
-|**Emitter distance**|**eD = 80**|**nm** |
-|Emitter activation| Markov chain frame by frame | |
-|Frame time | Dt = 0.01 | sec |
-|Mean deactivation time | t0 = 1.0 | sec |
-|Mean activation time | t1 = 0.025 | sec |
-|Mean photoactivatable time| t = 4.5 | sec |
+|Emitter distance|eD = 80|nm |
 
 The 10th frame is shown below.
 
@@ -137,24 +131,22 @@ The emitter locations of white dots on the helix and the activated emitters of r
 
 **Output:** AI is supposed to output a list of estimated emitter locations, representing a superresolution SMLM image of the helix. 
 
-## 5. Benchmarking and evaluating 
+## 5. Benchmarking 
+Benchmarking datasets are in the folder: **Benchmark** 
+
 For the purpose of benchmarking and evaluating, the dataset of ground-truth emitter locations is not provided. 
 
-### Procedure of evaluating
-A participant shall run a participating localization algorithm over the data movie in Benchmark to estimate a list of emitter locations. After the participant submits the list of estimated location, we will calculate its RMSMD in comparison of the ground-truth locations. The result will be posted in the leaderboard. 
+### Procedure 
+A participant shall run a participating localization algorithm over the data movie in Benchmark to estimate a list of emitter locations. After the participant submits the list of estimated location, we will calculate its RMSMD in comparison with the ground-truth locations. The result will be posted in the leaderboard. 
 
 ### Dataset
-The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking and evaluation is generated in the same way but the following parameters are set differently.  
+The emitters with the same adjacent distance are located on a circle. The data movie for benchmarking is generated in the same way as Test dataset with the following parameters.  
 
 |Parameter |Variable and value| Unit|
 |:-----|:-----|:-----|
-|Number of frames |N = 500 |frames |
+|Number of frames |N = 1000 |frames |
 |Number of emitters |M = 200 |emitters in specimen |
 |Emitter distribution| Circle | |
-|**Emitter distance**|**eD = 80**|**nm** |
-|Mean deactivation time |t0 = 0.90 | sec |
-|Mean activation time |t1 = 0.04 | sec |
-|Mean photoactivatable time| t = 6 | sec |
 
 The 10th frame is shown below.
 
@@ -165,17 +157,17 @@ The emitter locations of white dots on the helix and the activated emitters of r
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Benchmark_Frame_10_Emitters.png)
 
 ### Benchmarking and evaluating
-The quality of the reconstructed SMLM can be benchmarked by the UGIA-F [1-3] and UGIA-M [6] estimators that achieve the Fisher information of data movie and single frames, respectively. Both UGIA-F and UGIA-M estimators are theoretical estimators. 
+The quality of the reconstructed SMLM is **benchmarked** by the UGIA-F [1-3] and UGIA-M [6] estimators that achieve the Fisher information of data movie and single frames, respectively. Both UGIA-F and UGIA-M estimators are theoretical estimators. 
 
-The quality metrics of the root mean square minimum distance (RMSMD) [3], RMSMD-P, and RMSE-P [5] are used to evaluate the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
+The quality metrics of the root mean square minimum distance (RMSMD) [3], RMSMD-P, and RMSE-P [5] are used to **evaluate** the accuracy of reconstructed SMLM image in comparison with the ground truth emitter locations.
 
 ### Performance of UGIA-F and UGIA-M estimators
 
-**UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
+**UGIA-F estimator:** The UGIA-F estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is listed in the leaderboard. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Benchmark_UGIA-F.png)
 
-**UGIA-M estimator:** The UGIA-M estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is given in the table below. 
+**UGIA-M estimator:** The UGIA-M estimator outputs an SMLM image as shown below. Its quality in terms of RMSMD is listed in the leaderboard. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Benchmark_UGIA-M.png)
 
