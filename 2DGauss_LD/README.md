@@ -42,29 +42,20 @@ An example of data frame is shown below.
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Train_Frame_10.png)
 
-**Output**: A set of 2D coordinates, each being an emitter's location, used in generating  the data frame in the input. An example of emitter locations is shown below where the white dots are emitter locations and the red dots are activated emitters in the data frame above. 
+**Output**: A set of 2D coordinates, each being a location of an activated emitter, used in generating  the data frame in the input. An example of emitter locations is shown below by the red dots over the corresponding data frame above. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Train_Frame_10_Emitters.png)
 
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
-**2DGauss_LD_Train_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
+The training dataset consists of a data movie and the list of activated emitters in each frame. 
 
-The emitters are randomly distributed and independent frame by frame. 
- 
-|Parameter |Variable and value| Unit| 
-|:-----|:-----|:-----| 
-|Number of frames |N = 500 |frames | 
-|Number of emitters |M = 5 |emitters/frame | 
-|Emitter density |D = 0.5|emitters/um^2| 
-|Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
-|Pixel size |Dx = 100, Dy = 100 | nm^2 | 
-|Frame size |Kx = 32, Ky = 32 |pixels | 
-|Emitter distribution| Random and uniform in FOV| | 
-|Emitter activation| independent frame by frame | | 
+**2DGauss_LD_Train_Frame.zip:** The data movie of N frames used as input in training of AI. 
 
-**2DGauss_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 2D emitter locations (x,y) in nm in each file are listed row by row, e.g.
+The 10th frame with the activated emitters are shown above. 
+
+**2DGauss_LD_Train_xy.zip:** N txt files each containing the list of activated emitter locations of 2D coordinates (x,y) in nm in the row-by-row format, e.g.
 
 4.4184628e+02   5.0638849e+03
 
@@ -74,11 +65,40 @@ The emitters are randomly distributed and independent frame by frame.
 
 The input data frame "2DGauss_LD_Train_Frame_n.tif" and the corresponding output emitter-location file "2DGauss_LD_Train_xy_n.txt" have the same frame index n. 
 
+**Data movie**
+
+The main parameters of data movie are as follows. 
+
+|Parameter |Variable and value| Unit| 
+|:-----|:-----|:-----| 
+|Number of frames |N = 1000 |frames | 
+|Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
+|Pixel size |Dx = 100, Dy = 100 | nm^2 | 
+|Frame size |Kx = 32, Ky = 32 |pixels | 
+|Emitter activation| independent frame by frame | | 
+
+**Emitters**
+
+The emitter locations are shown below. 
+
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DGauss_LD/Docs/Fig2DGauss_LD_Train_xy.png)
+
+The emitters are independently and identically activated frame by frame according to a Markov chain with the following parameters [4]. 
+
+|Parameter |Variable and value| Unit|
+|:-----|:-----|:-----|
+|Number of emitters |M = 512 |ground-truth emitters|
+|Emitter density |eD = 50|emitters/um^2| 
+|Emitter distribution| Random and uniform in FOV| | 
+|Mean deactivation time |t0 = 0.60 | sec |
+|Mean activation time |t1 = 0.015 | sec |
+|Mean photoactivatable time| t = 10.0 | sec |
+
 ## 3. Validating datasets
 
 Validating datasets are in the folder: **Validate** 
 
-The validating datasets, consisting of N = 50 pairs of input and output files, are generated using the same parameters as those of the training datasets. 
+The validating datasets, consisting of N = 500 pairs of input and output files, are generated using the same parameters as those of the training datasets. 
 
 ## 4. Testing datasets
 
