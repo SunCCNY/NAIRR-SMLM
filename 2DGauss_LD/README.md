@@ -28,10 +28,8 @@ To provide
   
 * Evaluating and benchmarking performance of conventional spatiotempoal localization algorithms by the UGIA-F and UGIA-M estimators.
 
-### Type of localization and imaging system
-**Localization:** Frame-by-frame localization (FFL) by AI or conventional localization algorithms. 
-
-**System:** 2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters. 
+### Imaging system
+2D imaging, Gaussian point spread function (PSF), and low density (LD) of emitters per frame. 
 
 ### AI input and output
 AI can be trained, validated, tested, and benchmarked by a pair of input and output datasets. 
