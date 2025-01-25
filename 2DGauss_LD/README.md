@@ -145,6 +145,7 @@ The emitters with the same adjacent distance are located on a circle. The data m
 |Number of frames |N = 1000 |frames |
 |Number of emitters |M = 200 |emitters in specimen |
 |Emitter distribution| Circle | |
+|Emitter distance |eD = 30|nm |
 
 The 10th frame is shown below.
 
