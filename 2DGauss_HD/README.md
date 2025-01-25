@@ -75,7 +75,6 @@ The main parameters of data movie are as follows.
 |Field of view (FOV) |[0, Lx] x [0, Ly] = [0, 3200] x [0, 3200]|nm| 
 |Pixel size |Dx = 100, Dy = 100 | nm^2 | 
 |Frame size |Kx = 32, Ky = 32 |pixels | 
-|Emitter activation| independent frame by frame | | 
 
 **Emitters**
 
