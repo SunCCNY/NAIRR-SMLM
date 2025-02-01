@@ -85,7 +85,7 @@ The emitters are independently and identically activated frame by frame accordin
 |Parameter |Variable and value| Unit| 
 |:-----|:-----|:-----| 
 |Number of emitters |M = 640 |Ground-truth emitters | 
-|Emitter density on camera plane |D = 625|emitters/um^2| 
+|Emitter density on camera plane |D = 6.25|emitters/um^2| 
 |Emitter distribution| Random and uniform in FOV| | 
 |Emitter activation| Markov chain frame by frame | |
 |Mean deactivation time |t0 = 0.50 | sec |
