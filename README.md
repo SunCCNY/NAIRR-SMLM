@@ -17,7 +17,7 @@ The emitters are excited by lasers and randomly emits fluorescence that passes t
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/Docs/Fig-SMLM-system-3.jpg)
 
 ## Localization algorithm
-A localization algorithm plays a critical role in mining the information of emitter locations from a large number of data frames to reconstruct a one-shot superresolution image. Hence, the localization algorithm must be informationally efficient and computationally efficient.  
+A localization algorithm plays a crucial role in mining the information of emitter locations from a large number of data frames to reconstruct a one-shot superresolution image. Hence, the localization algorithm must be informationally efficient and computationally efficient.  
 
 ## AI
 Due to its highly informational and computational efficiency, an AI built on neural network and deep learning is particularly suitable to serve as a localization algorithm in SMLM. 
