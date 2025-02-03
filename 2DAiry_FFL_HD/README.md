@@ -109,7 +109,7 @@ The 10th frame is shown below.
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DAiry_FFL_HD/Docs/Fig2DAiry_FFL_HD_Test_Frame_10.png)
 
-The emitter locations of white dots on the helix and the activated emitters of red dots over the 10th frame is shown below. 
+Over the 10th frame, the emitter locations are the white dots on the helix and the activated emitters are the red dots as shown below. 
 
 ![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/2DAiry_FFL_HD/Docs/Fig2DAiry_FFL_HD_Test_Frame_10_Emitters.png)
 
