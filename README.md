@@ -57,7 +57,7 @@ Given a testing dataset, a trained AI can be tested where
 ## Evaluating
 The performance of a trained AI can be evaluated by the universal quality metrics of root mean square minimum distance (RMSMD) [7], RMSMD with partition (RMSMD-P) [9], and root mean square error (RMSE) with partition (RMSE-P) [9]. Specifically, 
 
-* Given the set of emitter locations in the testing dataset and the AI outputted set of emitter locations, their error can be calculated in terms of RMSMD. 
+* Given the set of emitter locations in the testing dataset and the AI output set of emitter locations, their error can be calculated in terms of RMSMD. 
 * If the number of frames that each emitter is activated in the testing data movie is further given, the RMSMD-P and RMSE-P can be calculated. 
 
 ## Benchmarking
