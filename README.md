@@ -24,7 +24,7 @@ Due to its highly informational and computational efficiency, an AI built on neu
 
 # Datasets
 ## Type of datasets
-In each case, there are three datasets for AI training, validating and testing, respectively.
+In each case, there are four datasets for AI training, validating, testing, and banchmarking, respectively.
 
 ## Components 
 Each dataset consists of two components:
