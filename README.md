@@ -65,9 +65,7 @@ The performance of a trained AI can also be benchmarked by the unbiased Gaussian
 
 Both UGIA-M and UGIA-F estimators are theoretical estimators derived from the Fisher information. The UGIA-M estimator achieves the Fisher information of the data movie and the UGIA-F estimator achieves the Fisher information of each data frame. 
 
-Given a testing dataset, the UGIA-M estimator can generate a set of estimated emitter locations, and the RMSMD, RMSMD-P and RMSE-P can be calculated, which can be used to benchmark the performance of AI. 
-
-Similarly, given a testing dataset, the UGIA-F estimator can generate a set of estimated emitter locations, and the RMSMD, RMSMD-P and RMSE-P can be calculated, which can be used to benchmark the performance of AI. 
+Given a benchmarking dataset, the UGIA-F and UGIA-M estimators can generate a set of estimated emitter locations, respectively. Their RMSMD, RMSMD-P and RMSE-P can be calculated to benchmark the performance of AI. 
 
 # Codes
 All the codes that generate the datasets are provided so that a researcher can easily modify the parameters to generate desired datasets.  
