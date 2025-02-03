@@ -201,7 +201,7 @@ The RMSMD of the submitted list will be posted in the Leaderboard.
 
 The corresponding 2D coordinate in a data frame is shown below. 
 
-![Alt text](https://github.com/SolnBenchmark/Benchmark/blob/master/2DGauss_SESF/Doc/FrameCoordinates.png)
+![Alt text](https://github.com/SunCCNY/NAIRR-SMLM/blob/main/Docs/FrameCoordinates.png)
 
 ## 8. Codes
 All the codes that generate the datasets are in the folder: **Codes**  
