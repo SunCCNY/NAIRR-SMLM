@@ -10,7 +10,7 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 |ThunderSTORM |Conventional |Frame by frame|13.44 |
 |DECODE     |AI            |Joint frames| |
 |DeepSTORM |AI |Frame by frame| |
-|3D-DAOSTORM|conventional|Frame by frame| |
+|3D-DAOSTORM|Conventional|Frame by frame| |
 |SIC|Conventional |Frame by frame | |
 
 ## 1. Introduction 
