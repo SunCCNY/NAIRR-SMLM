@@ -49,6 +49,9 @@ An example of data frame is shown below.
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
+### Frame by frame datasets
+Datasets are stored as individual frames. 
+
 **3DAS_FFL_LD_Train_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
 
 The emitters are randomly distributed and independent frame by frame. 
@@ -64,7 +67,7 @@ The emitters are randomly distributed and independent frame by frame.
 |Emitter distribution| Random and uniform in FOV| | 
 |Emitter activation| independent frame by frame | | 
 
-**3dAS_FFL_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 3D emitter locations (x,y,z) in nm in each file are listed row by row, e.g.
+**3DAS_FFL_LD_Train_xy.zip:** N txt files each containing M emitter locations. The 3D emitter locations (x,y,z) in nm in each file are listed row by row, e.g.
 
 2.6071158e+03   3.1212930e+02  -2.7390953e+02
 
@@ -73,6 +76,13 @@ The emitters are randomly distributed and independent frame by frame.
 ... ...
 
 The input data frame "3DAS_FFL_LD_Train_Frame_n.tif" and the corresponding output emitter-location file "3DAS_FFL_LD_Train_xyz_n.txt" have the same frame index n. 
+
+### Movie datatsets
+Datasets are also concisely stored as an entire data movie of all frames as below.  
+
+**3DAS_FFL_LD_Train_Frame.tif:** N data frames. 
+
+**3DAS_FFL_LD_Train_xy.csv:** All activated emitter locations. 
 
 ## 3. Validating datasets
 
