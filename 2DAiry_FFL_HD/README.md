@@ -78,7 +78,7 @@ The emitters are randomly distributed and independent frame by frame.
 The input data frame "2DAiry_FFL_HD_Train_Frame_n.tif" and the corresponding output emitter-location file "2DAiry_FFL_HD_Train_xy_n.txt" have the same frame index n. 
 
 ### Movie datatsets
-Datasets are concisely stored as an entire data movie of all frames as below.  
+Datasets are also concisely stored as an entire data movie of all frames as below.  
 
 **2DAiry_FFL_HD_Train_Frame.tif:** N data frames. 
 
