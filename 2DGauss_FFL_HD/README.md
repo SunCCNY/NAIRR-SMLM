@@ -49,6 +49,9 @@ An example of data frame is shown below.
 ## 2. Training datasets
 Training datasets are in the folder: **Train** 
 
+### Frame by frame datasets
+Datasets are stored as individual frames. 
+
 **2DGauss_FFL_HD_Train_Frame.zip:** N data frames used as input in training of AI. The main parameters are given below.
 
 The emitters are randomly distributed and independent frame by frame. 
@@ -73,6 +76,13 @@ The emitters are randomly distributed and independent frame by frame.
 ... ...
 
 The input data frame "2DGauss_FFL_HD_Train_Frame_n.tif" and the corresponding output emitter-location file "2DGauss_FFL_HD_Train_xy_n.txt" have the same frame index n. 
+
+### Movie datatsets
+Datasets are also concisely stored as an entire data movie of all frames as below.  
+
+**2DGauss_FFL_HD_Train_Frame.tif:** N data frames. 
+
+**2DGauss_FFL_HD_Train_xy.csv:** All activated emitter locations. 
 
 ## 3. Validating datasets
 
