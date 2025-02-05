@@ -51,6 +51,9 @@ Training datasets are in the folder: **Train**
 
 The training dataset consists of a data movie and the list of activated emitters in each frame. 
 
+### Frame by frame datasets
+Datasets are stored as individual frames. 
+
 **2DAiry_MD_Train_Frame.zip:** The data movie of N frames used as input in training of AI. 
 
 The 10th frame with the activated emitters are shown above. 
@@ -65,7 +68,14 @@ The 10th frame with the activated emitters are shown above.
 
 The input data frame "2DAiry_MD_Train_Frame_n.tif" and the corresponding output emitter-location file "2DAiry_MD_Train_xy_n.txt" have the same frame index n. 
 
-**Data movie**
+### Movie datatsets
+Datasets are also concisely stored as an entire data movie of all frames as below.  
+
+**2DAiry_MD_Train_Frame.tif:** N data frames. 
+
+**2DAiry_MD_Train_xy.csv:** All activated emitter locations. 
+
+### Data movie 
 
 The main parameters of data movie are as follows. 
 
@@ -76,7 +86,7 @@ The main parameters of data movie are as follows.
 |Pixel size |Dx = 100, Dy = 100 | nm | 
 |Frame size |Kx = 32, Ky = 32 |pixels | 
 
-**Emitters**
+### Emitters
 
 The emitter locations are shown below. 
 
