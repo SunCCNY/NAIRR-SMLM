@@ -82,7 +82,7 @@ Datasets are also concisely stored as an entire data movie of all frames as belo
 
 **2DAiry_FFL_LD_Train_Frame.tif:** N data frames. 
 
-**2DAiry_FFL_LD_Train_xy.csv:** all activated emitter locations. 
+**2DAiry_FFL_LD_Train_xy.csv:** All activated emitter locations. 
 
 ## 3. Validating datasets
 
