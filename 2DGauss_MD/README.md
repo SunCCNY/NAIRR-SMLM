@@ -29,9 +29,7 @@ To provide
 * Evaluating and benchmarking performance of conventional spatiotemporal localization algorithms by the UGIA-F and UGIA-M estimators.
 
 ### Imaging system
-2D imaging, Gaussian point spread function (PSF), and medium density (MD) of emitters per frame. 
-
-**System:** 2D imaging, Gaussian point spread function (PSF), and medium density (MD) of emitters. 
+2D imaging, Gaussian point spread function (PSF), and medium density (MD) of emitters. 
 
 ### AI input and output
 AI can be trained, validated, tested, and benchmarked by a pair of input and output datasets. 
