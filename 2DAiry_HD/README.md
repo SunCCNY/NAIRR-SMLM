@@ -75,7 +75,7 @@ Datasets are also concisely stored as an entire data movie of all frames as belo
 
 **2DAiry_HD_Train_xy.csv:** All activated emitter locations. 
 
-**Data movie**
+### Data movie
 
 The main parameters of data movie are as follows. 
 
@@ -86,7 +86,7 @@ The main parameters of data movie are as follows.
 |Pixel size |Dx = 100, Dy = 100 | nm | 
 |Frame size |Kx = 32, Ky = 32 |pixels | 
 
-**Emitters**
+### Emitters
 
 The emitter locations are shown below. 
 
