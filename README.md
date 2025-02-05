@@ -71,7 +71,15 @@ Given a benchmarking dataset, the UGIA-F and UGIA-M estimators can generate a se
 All the codes that generate the datasets are provided so that a researcher can easily modify the parameters to generate desired datasets.  
 
 # Acknowledgments
-This work was partly supported by the NSF under Grant Number CCF-2313072, the Army Research Office under Grant Number W911NF-23-1-0189, and the PSC-CUNY under Grant Number 66699-00 54. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the Army Research Office or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation.
+This work was partly supported by the following funding agencies. 
+
+The NSF under Grant Number CCF-2313072. 
+
+The Army Research Office under Grant Number W911NF-23-1-0189. 
+
+The PSC-CUNY under Grant Number 66699-00 54. 
+
+The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the Army Research Office or the U.S. Government. The U.S. Government is authorized to reproduce and distribute reprints for Government purposes notwithstanding any copyright notation.
 
 # References
 [1] E. Betzig, G. H. Patterson, R. Sougrat, O. W. Lindwasser, S. Olenych, J. S. Bonifacino, M. W. Davidson, J. Lippincott-Schwartz, and H. F. Hess, "Imaging intracellular fluorescent proteins at nanometer resolution," Science, 313(5793), 1642–1645(2006). 
