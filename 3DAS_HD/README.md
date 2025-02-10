@@ -80,7 +80,7 @@ The main parameters of data movie are as follows.
 |Parameter |Variable and value| Unit| 
 |:-----|:-----|:-----| 
 |Number of frames |N = 1000 |frames | 
-|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 3200] x [0, 3200] x [-400, 400]|nm<sup>3</sup>| 
+|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 3200] x [0, 3200] x [-400, 400]|nm^3| 
 |Pixel size |Dx = 100, Dy = 100 | nm | 
 |Frame size |Kx = 32, Ky = 32 |pixels | 
 
@@ -95,7 +95,7 @@ The emitters are independently and identically activated frame by frame accordin
 |Parameter |Variable and value| Unit| 
 |:-----|:-----|:-----| 
 |Number of emitters |M = 640 |Ground-truth emitters | 
-|Emitter density on camera plane |D = 6.25|emitters/um<sup>2</sup>| 
+|Emitter density on camera plane |D = 6.25|emitters/um^2| 
 |Emitter distribution| Random and uniform in FOV| | 
 |Emitter activation| Markov chain frame by frame | |
 |Mean deactivation time |t0 = 0.50 | sec |
@@ -120,7 +120,7 @@ The testing datasets are a data movie where emitters are located on a 3D helix. 
 |:-----|:-----|:-----|
 |Number of frames |N = 1000 |frames |
 |Number of emitters |M = 400 |emitters in specimen |
-|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 6400] x [0, 6400] x [-400, 400]|nm<sup>3</sup>| 
+|Field of view (FOV) |[0, Lx] x [0, Ly] x [-Lz, Lz] = [0, 6400] x [0, 6400] x [-400, 400]|nm^3| 
 |Pixel size |Dx = 100, Dy = 100 | nm |
 |Frame size |Kx = 64, Ky = 64 |pixels |
 |Emitter distribution| Helix| |
@@ -215,9 +215,9 @@ The RMSMD of the submitted list will be posted in the Leaderboard.
 | |Ax=0.05, Bx=0.03	|  |
 | |sigmay0=135	| nm |
 | |Ay=-0.01, By=0.02|  |	
-|Mean of Poisson noise |b = 0.3|photons/sec/nm<sup>2</sup>|
-|Variance of Gaussian noise |G = 0.2|photons/sec/nm<sup>2</sup>| 
-|Mean of Gaussian noise |mu = 5|photons/sec/nm<sup>2</sup>|
+|Mean of Poisson noise |b = 0.3|photons/sec/nm^2|
+|Variance of Gaussian noise |G = 0.2|photons/sec/nm^2| 
+|Mean of Gaussian noise |mu = 5|photons/sec/nm^2|
 
 **Corresponding composite parameters**
 
