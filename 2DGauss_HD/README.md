@@ -12,7 +12,7 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 |3D-DAOSTORM|Conventional|Frame by frame|122.69 |
 |DECODE     |AI            |Joint frames| |
 |DeepSTORM |AI |Frame by frame| |
-|FSIC|Conventional |Frame by frame | |
+|FSIC|Conventional |Frame by frame | | 
 
 ## 1. Introduction 
 
