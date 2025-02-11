@@ -8,11 +8,11 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 |UGIA-M     |Theoretical   |Joint frames     |3.05      |
 |UGIA-F     |Theoretical   |Frame by frame   |12.85     |
 |ThunderSTORM |Conventional |Frame by frame|13.44 | 
+|DeepSTORM |AI |Frame by frame|51.03 |
 |SIC        |Conventional   |Frame by frame |54.23 |
 |3D-DAOSTORM|Conventional  |Frame by frame   |69.78   |
+|FSIC|Conventional |Frame by frame |269.61 |
 |DECODE     |AI            |Joint frames| |
-|DeepSTORM |AI |Frame by frame| |
-|FSIC|Conventional |Frame by frame | |
 
 ## 1. Introduction 
 
