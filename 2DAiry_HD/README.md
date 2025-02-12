@@ -6,11 +6,11 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 | Algorithm |Algorithm Type | Localization Type | RMSMD (nm)|
 |----------:|-------------:|----------------:|---------:|
 |UGIA-M     |Theoretical   |Joint frames     |5.21      |
+|FSIC|Conventional |Frame by frame |11.60 |
 |ThunderSTORM |Conventional|Frame by frame   |20.84     |
 |SIC        |Conventional  |Frame by frame   |61.34     |
 |UGIA-F     |Theoretical   |Frame by frame   |62.86     |
 |3D-DAOSTORM|Conventional  |Frame by frame   |102.35    |
-|FSIC|Conventional |Frame by frame |334.67 |
 |DeepSTORM |AI |Frame by frame|640.54 |
 |DECODE     |AI            |Joint frames| |
 
