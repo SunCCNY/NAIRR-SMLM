@@ -3,11 +3,11 @@
 ## Leaderboard in benchmarking and evaluating
 The leaderboard will be updated after a submission. The dataset in Benchmark is used in the benchmarking and evaluating. 
 
-| Algorithm |Algorithm Type|Localization Type|RMSMD (nm)|
+| Algorithm |Algorithm Type|Localization Type|RMSMD-P (nm)|
 |----------:|-------------:|----------------:|---------:|
 |UGIA-M     |Theoretical   |Joint frames      |6.54      |
 |ThunderSTORM |Conventional |Frame by frame  |63.88 |
-|UGIA-F     |Theoretical   |Frame by frame   |64.60     |
+|UGIA-F     |Theoretical   |Frame by frame   |329.56    |
 |QC-STORM   |Conventional  |Frame by frame  |934.25 |
 |DeepSTORM |AI |Frame by frame||
 |FSIC|Conventional |Frame by frame ||
