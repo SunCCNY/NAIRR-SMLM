@@ -11,6 +11,7 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 |DECODE |AI |Frame by frame|285.40|
 |UGIA-F     |Theoretical   |Frame by frame   |747.54     |
 |QC-STORM   |Conventional|Frame by frame|830.20 |
+|DeepSTORM |AI |Frame by frame||
 
 ## 1. Introduction 
 
