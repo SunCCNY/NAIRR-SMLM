@@ -11,8 +11,8 @@ The leaderboard will be updated after a submission. The dataset in Benchmark is 
 |FSIC|Conventional |Frame by frame |13.99 |
 |DeepSTORM |AI |Frame by frame|51.03 |
 |SIC        |Conventional   |Frame by frame |54.23 |
+|DECODE     |AI            |Joint frames| 62.67|
 |3D-DAOSTORM|Conventional  |Frame by frame   |69.78   |
-|DECODE     |AI            |Joint frames| |
 
 ## 1. Introduction 
 
